@@ -1,0 +1,50 @@
+﻿<Window x:Class="TradingControl.Views.CheckoutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:TradingControl.Views"
+        mc:Ignorable="d"
+        Title="CheckoutWindow" Height="255" Width="300" WindowStartupLocation="CenterScreen" Topmost="True"
+        FocusManager.FocusedElement="{Binding ElementName=txt_cash_value}">
+    <Window.Style>
+        <Style TargetType="Window">
+            <Setter Property="WindowState" Value="Normal"/>
+            <Setter Property="WindowStyle" Value="None"/>
+            <Setter Property="ResizeMode" Value="NoResize"/>
+        </Style>
+    </Window.Style>
+    <Window.Resources>
+        <Style TargetType="Label" x:Key="label_descr">
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="Height" Value="Auto"/>
+        </Style>
+    </Window.Resources>
+    <Border BorderBrush="Gray" BorderThickness="2" CornerRadius="2">
+        <Grid>
+            <Border Margin="25,12,25,0" BorderBrush="Gray" BorderThickness="1" CornerRadius="3" Height="173" VerticalAlignment="Top">
+                <Grid Margin="0,0,0,-1">
+                    <WrapPanel Height="40" HorizontalAlignment="Center" Width="220" Margin="16,13,15,0" VerticalAlignment="Top" >
+                        <Label Content="К оплате:" Style="{StaticResource label_descr}" />
+                        <Label Content="{Binding CheckoutValue, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Stretch" Style="{StaticResource label_descr}"/>
+                    </WrapPanel>
+
+                    <WrapPanel Height="40" HorizontalAlignment="Center" Width="220" Margin="15,118,14,0" VerticalAlignment="Top" >
+                        <Label Content="Внесено:" Style="{StaticResource label_descr}" />
+                        <xctk:IntegerUpDown Name="txt_cash_value" Minimum="0" Value="{Binding CashValue}" Width="100" HorizontalAlignment="Right" FontSize="22" VerticalContentAlignment="Center"/>
+                    </WrapPanel>
+
+                    <WrapPanel Height="40" HorizontalAlignment="Center" Width="220" Margin="15,58,14,0" VerticalAlignment="Top" >
+                        <Label Content="Сдача:" Style="{StaticResource label_descr}" />
+                        <Label Content="{Binding ChangeValue}" HorizontalAlignment="Stretch" Style="{StaticResource label_descr}"/>
+                    </WrapPanel>
+                </Grid>
+            </Border>
+
+            <Button Content="Принять" Height="35" Width="100" FontSize="18" Margin="24,201,172,0" VerticalAlignment="Top" IsDefault="True" Click="Accept"/>
+            <Button Content="Назад" Height="35" Width="100" FontSize="18" Margin="174,201,22,0" VerticalAlignment="Top" IsCancel="True"/>
+        </Grid>
+    </Border>
+</Window>

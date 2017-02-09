@@ -1,0 +1,11 @@
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\bin\Release\TradingDAL.dll.config
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\bin\Release\TradingDAL.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\bin\Release\TradingDAL.pdb
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\bin\Release\EntityFramework.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\bin\Release\MySql.Data.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\bin\Release\EntityFramework.xml
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\obj\Release\TradingDAL.dll
+C:\Users\123\Documents\Visual Studio 2015\Projects\TradingSolutions\TradingDAL\obj\Release\TradingDAL.pdb
